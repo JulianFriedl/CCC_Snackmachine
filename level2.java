@@ -6,9 +6,6 @@ public class level2 {
 		int anzahlMuenzen = Integer.parseInt(args[1]);
 		int[] muenzen = new int[anzahlMuenzen];
 		int[] Change = new int[8];
-		for (int i = 0; i < Change.length; i++) {
-			Change[i] = 0;
-		}
 
 		int m = 0;
 		int mChange = 0;
