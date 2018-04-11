@@ -2,8 +2,18 @@
 public class level1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		int Betrag = Integer.parseInt(args[0]);
+		int anzahlMuenzen = Integer.parseInt(args[1]);
+		int[] muenzen = new int[anzahlMuenzen];
+		
+		
+		for (int i = 0; i < anzahlMuenzen; i++) {
+			int offset = 2;
+			muenzen[i] = Integer.parseInt(args[offset+i]);
+		}	
+		
+		
 	}
 
 }
