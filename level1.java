@@ -6,6 +6,7 @@ public class level1 {
 		int Betrag = Integer.parseInt(args[0]);
 		int anzahlMuenzen = Integer.parseInt(args[1]);
 		int[] muenzen = new int[anzahlMuenzen];
+		int m = 0;
 		
 		
 		for (int i = 0; i < anzahlMuenzen; i++) {
@@ -13,7 +14,14 @@ public class level1 {
 			muenzen[i] = Integer.parseInt(args[offset+i]);
 		}	
 		
-		
+		for(int i = 0;i<muenzen.length;i++) {
+			m += muenzen[i];
+		}
+		if(m<Betrag) {
+			System.out.println("MISSING " + (Betrag-m));
+		}else if(m>Betrag) {
+			System.out.println("CHANGE " + (m-Betrag));
+		}
 	}
 
 }
